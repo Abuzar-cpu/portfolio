@@ -1,15 +1,19 @@
 import '../CSS/navbar.css'
-
-function Home(params) {
+import GalleryItem from './GalleryItem';
+function Gallery(params) {
     return(
         <div id='main' className={"container p-4"}>
             <div className={"row d-flex justify-content-between"}>
-                <div id='about' className="col-md-8 col-12 p-3">
-                    <h3 className='text'>About me</h3>
+                <div id='gallery' className="col-md-8 col-12 p-3">
+                    <h3 className='text'>Gallery </h3>
                     <hr/>
-                    <div>
-                        <img id="profile-pic" className="container" src={require("../assets/profile.jpg")}  alt={"Profile picture"}/>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti eveniet ratione recusandae magnam quidem earum aliquam delectus officia, unde perferendis rem natus, provident similique omnis laborum. Quis natus porro a odio, enim sapiente ea ipsa? Rem, asperiores sed, modi, reiciendis ad mollitia fuga aliquid ipsum eaque perspiciatis ratione debitis quam. Deleniti a blanditiis quo doloribus, odit impedit libero officia similique et aliquid necessitatibus magnam tenetur labore voluptate iusto velit cum fugiat neque eaque, error alias perspiciatis assumenda? Omnis, at facilis? Dolore, maxime omnis voluptas culpa eaque in, incidunt atque non eos molestiae modi eius nisi similique officiis facilis illum inventore!</p>
+                    <div className={"container d-flex justify-content-start flex-row flex-wrap"}>
+                        <GalleryItem projectName={"project name"}/>
+                        <GalleryItem projectName={"project name"}/>
+                        <GalleryItem projectName={"project name"}/>
+                        <GalleryItem projectName={"project name"}/>
+                        <GalleryItem projectName={"project name"}/>
+                        <GalleryItem projectName={"project name"}/>
                     </div>
                 </div>
 
@@ -29,5 +33,4 @@ function Home(params) {
         </div>
     )
 }
-
-export default Home;
+export default Gallery;

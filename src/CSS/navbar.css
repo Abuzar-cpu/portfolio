@@ -7,7 +7,7 @@ body {
 }
 
 #main {
-    height: 80vh;
+    min-height: 80vh;
 }
 
 #name {
@@ -23,18 +23,20 @@ body {
 }
 
 .links {
-    color: grey;
     font-weight: bold;
+    transition: all 0.5s;
 }
 
 .links:hover {
     color: rgb(21, 114, 75);
     cursor: pointer;
+    font-weight: bold;
 }
 
 #footer {
     background-color: grey;
     color: #fff;
+    border-top: 8px solid rgb(21, 114, 75);
 }
 
 #profile-pic {
@@ -42,8 +44,13 @@ body {
     width: 20vw;
 }
 
+.fab {
+    color: grey;
+    transition: all 0.5s;
+}
+
 #github-link:hover {
-    color: rgb(21, 114, 75);
+    color: #000;
     cursor: pointer;
 }
 
@@ -66,30 +73,42 @@ body {
     background-color: #fff;
 }
 
-#about {
-    height: fit-content;
+#about, #gallery {
+    /*height: fit-content;*/
     background-color: #fff;
 }
 
 button {
-    background-color:rgb(21, 114, 75);
+    background-color: rgb(21, 114, 75);
     border: none;
     border-radius: 10px;
     color: #fff;
+    transition: all 1s;
 }
-#item-container {
+
+#project-pic {
+    max-width: 175px;
+}
+
+.project-container {
+    width: fit-content;
     position: relative;
-    max-width: 30vh;
 }
+
 #project-name {
-    color:#fff;
     background-color: rgb(21, 114, 75);
+    color: white;
 }
 
-#card-body {
-    width: 18rem;
+hr {
+    color: rgb(21, 114, 75);
 }
 
-.card-title {
-    background-color: rgb(21, 114, 75);
+#active {
+    color: rgb(21, 114, 75);
+    font-weight: bold !important;
+}
+
+#submit-button:hover {
+    background-color: rgb(14, 65, 46);
 }
